@@ -36,7 +36,7 @@ interface DuelGameProps {
   onRematch: () => void;
 }
 
-const QUESTION_TIME_SECONDS = 10;
+const QUESTION_TIME_SECONDS = 20;
 const RESULT_DISPLAY_SECONDS = 3;
 const optionLabels = ["A", "B", "C", "D"];
 

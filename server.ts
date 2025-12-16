@@ -396,6 +396,8 @@ app.prepare().then(() => {
         room.currentQuestion = 0;
         room.roundAnswers = new Map();
         room.raceFailedPlayers = new Set();
+        // Reset all player scores for new game
+        room.players.forEach((p) => (p.score = 0));
         
         // Emit different events based on game mode
         if (room.gameMode === 'race') {
@@ -603,6 +605,8 @@ app.prepare().then(() => {
       room.questions = [];
       room.roundAnswers = new Map();
       room.raceFailedPlayers = new Set();
+        // Reset all player scores for new game
+        room.players.forEach((p) => (p.score = 0));
       room.players.forEach((p) => (p.score = 0));
       io.to(room.code).emit("rematch-started", { room });
       console.log(`Rematch started in room ${code}`);
