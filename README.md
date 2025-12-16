@@ -1,56 +1,81 @@
-# LearnTogether
+<div align="center">
+  
+# 🎓 LearnTogether
 
-> A multiplayer exam preparation app for German IT certifications (FISI/FIAE)
+**A multiplayer exam preparation app for German IT certifications**
 
-![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat-square&logo=next.js)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC?style=flat-square&logo=tailwind-css)
-![Socket.io](https://img.shields.io/badge/Socket.io-4.8-010101?style=flat-square&logo=socket.io)
+[![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![Socket.io](https://img.shields.io/badge/Socket.io-4-white?style=for-the-badge&logo=socket.io)](https://socket.io/)
 
-## Features
+[Live Demo](https://learn.engels.wtf) · [Report Bug](https://github.com/engelswtf/learn-together/issues) · [Request Feature](https://github.com/engelswtf/learn-together/issues)
 
-### Game Modes
+---
 
-- **Flashcards** - Study at your own pace with flip cards. Mark cards as "Known" or "Unknown" to track your progress.
-- **Quiz** - Test your knowledge with multiple-choice questions. Get instant feedback with explanations.
-- **Duel** - Challenge friends in turn-based competition. Everyone answers each question, and points are awarded based on correctness and speed.
-- **Race** - First to answer correctly wins! Real-time competitive mode where speed matters.
+<img src="https://img.shields.io/badge/Study_Smarter-Not_Harder-6366f1?style=for-the-badge" alt="Study Smarter, Not Harder" />
 
-### Progress Tracking
+</div>
 
-- Server-synced progress per player
-- Track flashcard sessions and quiz attempts
-- Best scores and percentages per topic
-- Daily streak tracking
-- Multiplayer game statistics (wins/losses)
+## ✨ Features
 
-### Weak Cards Review
+<table>
+<tr>
+<td width="50%">
 
-- Automatically identifies cards you marked as "Unknown"
-- Review weak cards across all topics
-- Focused study sessions for difficult content
+### 🃏 Flashcards
+Study with flip cards at your own pace. Track which cards you know and which need more practice.
 
-### Topics
+### ❓ Quiz Mode
+Test your knowledge with multiple-choice questions. Get instant feedback and track your scores.
 
-Currently includes content for German IT certification exams:
-- **Speichersysteme & Backup** - RAID levels, NAS/SAN, backup strategies
-- **Cloud Computing** - IaaS, PaaS, SaaS, deployment models
-- **Virtualisierung & Container** - Hypervisors, Docker, VMs vs Containers
+</td>
+<td width="50%">
 
-## Screenshots
+### ⚔️ Duel Mode
+Challenge friends in turn-based battles! Both players answer the same question - fastest correct answer wins.
 
-<!-- Add screenshots here -->
-*Coming soon*
+### 🏁 Race Mode
+First to answer correctly wins the round! Wrong answers lock you out while others keep trying.
 
-## Tech Stack
+</td>
+</tr>
+</table>
 
-- **Frontend**: Next.js 14, React 18, TypeScript
-- **Styling**: Tailwind CSS 3.4
-- **Real-time**: Socket.io 4.8
-- **Process Manager**: PM2
-- **Server**: Custom Node.js server with Next.js integration
+### 📊 Smart Progress Tracking
 
-## Getting Started
+- **Server-synced progress** - Same progress on all your devices
+- **Incremental saving** - Progress saves after each card/question
+- **Weak cards review** - Automatically tracks cards you struggle with
+- **Streak tracking** - Build daily study habits
+- **Multiplayer stats** - Track your Duel and Race wins
+
+---
+
+## 🎮 Game Modes
+
+| Mode | Players | Description |
+|------|---------|-------------|
+| 🃏 **Flashcards** | Solo | Flip cards, mark as "knew it" or "still learning" |
+| ❓ **Quiz** | Solo | Multiple choice with instant feedback |
+| ⚔️ **Duel** | 2-4 | Turn-based, everyone answers, fastest wins points |
+| 🏁 **Race** | 2-4 | First correct answer wins, wrong = locked out |
+
+---
+
+## 📚 Topics Included
+
+| Topic | Flashcards | Quiz Questions |
+|-------|------------|----------------|
+| 💾 Speichersysteme & Backup | 35 | 35 |
+| ☁️ Cloud Computing | 32 | 24 |
+| 🐳 Virtualisierung & Container | 40 | 22 |
+
+> Perfect for German IT certification exams (Fachinformatiker, IT-Systemelektroniker, etc.)
+
+---
+
+## 🚀 Quick Start
 
 ### Prerequisites
 
@@ -66,340 +91,159 @@ cd learn-together
 
 # Install dependencies
 npm install
-```
 
-### Development
-
-```bash
 # Start development server
 npm run dev
 ```
 
-The app will be available at `http://localhost:3000`
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### Production
+### Production Build
 
 ```bash
-# Build the application
+# Build for production
 npm run build
 
 # Start production server
 npm start
 ```
 
-Or use PM2:
+---
 
-```bash
-# Install PM2 globally
-npm install -g pm2
+## 🏗️ Tech Stack
 
-# Start with PM2
-pm2 start ecosystem.config.js
+<table>
+<tr>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=nextjs" width="48" height="48" alt="Next.js" />
+<br>Next.js 14
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=ts" width="48" height="48" alt="TypeScript" />
+<br>TypeScript
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=tailwind" width="48" height="48" alt="Tailwind" />
+<br>Tailwind CSS
+</td>
+<td align="center" width="96">
+<img src="https://socket.io/images/logo.svg" width="48" height="48" alt="Socket.io" />
+<br>Socket.io
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=nodejs" width="48" height="48" alt="Node.js" />
+<br>Node.js
+</td>
+</tr>
+</table>
 
-# View logs
-pm2 logs learn-together
+---
 
-# Monitor
-pm2 monit
-```
-
-## Project Structure
+## 📁 Project Structure
 
 ```
 learn-together/
 ├── src/
 │   ├── app/                    # Next.js App Router pages
-│   │   ├── page.tsx            # Home page (welcome screen)
-│   │   ├── layout.tsx          # Root layout
 │   │   ├── mode/[mode]/        # Game mode selection
-│   │   ├── topic/[id]/         # Topic-specific pages
-│   │   │   ├── flashcards/     # Flashcard game
-│   │   │   ├── quiz/           # Quiz game
-│   │   │   ├── duel/           # Duel multiplayer
-│   │   │   ├── race/           # Race multiplayer
-│   │   │   └── review/         # Weak cards review
-│   │   └── play/               # Multiplayer lobby pages
-│   │       ├── duel/           # Duel lobby
-│   │       └── race/           # Race lobby
+│   │   ├── play/               # Multiplayer lobbies
+│   │   └── topic/[id]/         # Topic game pages
 │   ├── components/             # React components
-│   │   ├── multiplayer/        # Multiplayer-specific components
-│   │   │   ├── Lobby.tsx       # Room creation/joining
-│   │   │   ├── WaitingRoom.tsx # Pre-game waiting room
-│   │   │   ├── DuelGame.tsx    # Duel game component
-│   │   │   └── RaceGame.tsx    # Race game component
-│   │   ├── Flashcard.tsx       # Single flashcard component
+│   │   ├── multiplayer/        # Duel & Race components
+│   │   ├── Flashcard.tsx       # Flip card component
 │   │   ├── FlashcardGame.tsx   # Flashcard game logic
-│   │   ├── QuizGame.tsx        # Quiz game logic
-│   │   └── ...
+│   │   └── QuizGame.tsx        # Quiz game logic
 │   ├── contexts/               # React contexts
 │   │   └── PlayerContext.tsx   # Player state & progress
-│   ├── data/                   # Static data
-│   │   ├── topics.ts           # Topic definitions
-│   │   ├── gameModes.ts        # Game mode definitions
-│   │   └── content/            # Topic content (flashcards, questions)
+│   ├── data/                   # Topic content
+│   │   └── content/            # Flashcards & questions
 │   ├── hooks/                  # Custom React hooks
-│   │   ├── useProgress.ts      # Progress tracking hook
-│   │   └── useWeakCards.ts     # Weak cards identification
-│   ├── lib/                    # Utilities
-│   │   └── socket.ts           # Socket.io client
-│   └── types/                  # TypeScript types
-│       └── index.ts
-├── data/
-│   └── progress/               # Player progress JSON files
-├── server.ts                   # Custom server with Socket.io
-├── ecosystem.config.js         # PM2 configuration
-└── package.json
+│   └── lib/                    # Utilities
+├── server.ts                   # Socket.io server
+├── data/progress/              # Player progress (JSON)
+└── docs/                       # Documentation
 ```
 
-## Game Modes
+---
 
-### Flashcards
+## 📖 Documentation
 
-Solo study mode where you flip through cards and mark them as "Known" or "Unknown". Progress is tracked per topic with:
-- Total cards studied
-- Known/Unknown counts
-- Sessions completed
-- Best known percentage
+| Document | Description |
+|----------|-------------|
+| [Adding Content](docs/ADDING_CONTENT.md) | How to add new topics, flashcards, and questions |
+| [Deployment](docs/DEPLOYMENT.md) | Production deployment guide |
 
-### Quiz
+---
 
-Multiple-choice quiz mode with:
-- Randomized questions
-- Instant feedback with explanations
-- Score tracking
-- Best score and average percentage per topic
+## 🔌 API Reference
 
-### Duel (Multiplayer)
+### Progress Endpoints
 
-Turn-based competitive mode for 2-4 players:
-1. Create or join a room with a 4-character code
-2. Host selects a topic
-3. All players answer each question
-4. Points awarded: 100 base + speed bonus (up to 50)
-5. Results shown after each round
-6. Final scores displayed at game end
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `POST` | `/api/progress/login` | Login with player name |
+| `POST` | `/api/progress/save` | Save player progress |
+| `GET` | `/api/progress/load` | Load player progress |
 
-### Race (Multiplayer)
+### Socket Events
 
-Real-time competitive mode for 2-4 players:
-1. Create or join a room
-2. Host selects a topic
-3. First correct answer wins the round
-4. Wrong answers lock you out for that round
-5. Points: 100 base + speed bonus
-6. Most points at end wins
+<details>
+<summary><b>Room Management</b></summary>
 
-## Progress System
+| Event | Direction | Description |
+|-------|-----------|-------------|
+| `create-room` | Client → Server | Create a new game room |
+| `join-room` | Client → Server | Join existing room |
+| `room-created` | Server → Client | Room created successfully |
+| `room-joined` | Server → Client | Joined room successfully |
+| `player-joined` | Server → Room | New player joined |
+| `player-left` | Server → Room | Player left |
 
-Progress is stored server-side in JSON files (`data/progress/{player-name}.json`).
+</details>
 
-### Data Structure
+<details>
+<summary><b>Game Events</b></summary>
 
-```typescript
-interface ProgressData {
-  playerName: string;
-  topics: {
-    [topicId: string]: {
-      flashcards: {
-        totalStudied: number;
-        totalKnown: number;
-        totalUnknown: number;
-        lastStudied: string | null;
-        sessionsCompleted: number;
-        bestKnownPercentage: number;
-      };
-      quiz: {
-        totalAttempts: number;
-        totalCorrect: number;
-        totalIncorrect: number;
-        lastAttempted: string | null;
-        bestScore: number;
-        bestPercentage: number;
-        averagePercentage: number;
-      };
-    };
-  };
-  overall: {
-    totalFlashcardsStudied: number;
-    totalQuizAttempts: number;
-    totalStudyTime: number;
-    lastActive: string | null;
-    streakDays: number;
-    lastStreakDate: string | null;
-    duelGamesPlayed: number;
-    duelGamesWon: number;
-    raceGamesPlayed: number;
-    raceGamesWon: number;
-  };
-}
-```
+| Event | Direction | Description |
+|-------|-----------|-------------|
+| `start-game` | Client → Server | Host starts the game |
+| `game-started` | Server → Room | Game has started (Duel) |
+| `race-game-started` | Server → Room | Game has started (Race) |
+| `submit-answer` | Client → Server | Submit answer (Duel) |
+| `race-answer` | Client → Server | Submit answer (Race) |
+| `round-results` | Server → Room | Round results (Duel) |
+| `race-round-winner` | Server → Room | Round winner (Race) |
+| `game-over` | Server → Room | Game finished |
+| `request-rematch` | Client → Server | Request a rematch |
 
-### Streak System
+</details>
 
-- Consecutive daily activity increases streak
-- Missing a day resets streak to 1
-- Tracked via `lastStreakDate`
+---
 
-## Adding Content
+## 🤝 Contributing
 
-See [docs/ADDING_CONTENT.md](docs/ADDING_CONTENT.md) for detailed instructions.
-
-### Quick Start
-
-1. Create a new content file in `src/data/content/`:
-
-```typescript
-// src/data/content/my-topic.ts
-import { TopicContent } from '@/types';
-
-export const myTopicContent: TopicContent = {
-  topicId: 'my-topic',
-  flashcards: [
-    { id: '1', front: 'Question?', back: 'Answer' },
-    // ...
-  ],
-  quizQuestions: [
-    {
-      id: '1',
-      question: 'What is...?',
-      options: ['A', 'B', 'C', 'D'],
-      correctIndex: 0,
-      explanation: 'A is correct because...'
-    },
-    // ...
-  ],
-};
-```
-
-2. Register in `src/data/content/index.ts`
-3. Add topic to `src/data/topics.ts`
-
-## Deployment
-
-See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for detailed instructions.
-
-### Quick Setup
-
-1. Build the application:
-```bash
-npm run build
-```
-
-2. Start with PM2:
-```bash
-pm2 start ecosystem.config.js
-pm2 save
-pm2 startup
-```
-
-3. Configure reverse proxy (Caddy example):
-```
-learn.example.com {
-    reverse_proxy localhost:3000
-}
-```
-
-## API Endpoints
-
-### Progress API
-
-#### POST `/api/progress/login`
-
-Login or create a new player.
-
-**Request:**
-```json
-{
-  "playerName": "string (min 2 chars)"
-}
-```
-
-**Response:**
-```json
-{
-  "progress": { /* ProgressData */ },
-  "isReturning": true | false
-}
-```
-
-#### POST `/api/progress/save`
-
-Save player progress.
-
-**Request:**
-```json
-{
-  "playerName": "string",
-  "progress": { /* ProgressData */ }
-}
-```
-
-**Response:**
-```json
-{
-  "success": true
-}
-```
-
-#### GET `/api/progress/load?playerName={name}`
-
-Load player progress.
-
-**Response:**
-```json
-{
-  "progress": { /* ProgressData */ },
-  "isReturning": true | false
-}
-```
-
-## Socket Events
-
-### Client → Server
-
-| Event | Payload | Description |
-|-------|---------|-------------|
-| `create-room` | `{ playerName, gameMode }` | Create a new game room |
-| `join-room` | `{ code, playerName }` | Join existing room |
-| `select-topic` | `{ code, topicId }` | Host selects topic |
-| `start-game` | `{ code, questions }` | Start the game |
-| `submit-answer` | `{ code, questionIndex, selectedIndex, correctIndex, timeMs, isCorrect, points }` | Submit answer (Duel) |
-| `race-answer` | `{ code, questionIndex, selectedIndex, correctIndex, timeMs }` | Submit answer (Race) |
-| `race-next-question` | `{ code }` | Advance to next question (Race) |
-| `request-rematch` | `{ code }` | Request a rematch |
-
-### Server → Client
-
-| Event | Payload | Description |
-|-------|---------|-------------|
-| `room-created` | `{ room, playerId }` | Room successfully created |
-| `room-joined` | `{ room, playerId }` | Successfully joined room |
-| `player-joined` | `{ room }` | Another player joined |
-| `player-left` | `{ playerName, room }` | Player left the room |
-| `topic-selected` | `{ topicId }` | Topic was selected |
-| `game-started` | `{ room, questions }` | Duel game started |
-| `race-game-started` | `{ room, questions }` | Race game started |
-| `answer-submitted` | `{ playerId }` | Player submitted answer |
-| `round-results` | `{ result, players }` | Duel round results |
-| `race-round-winner` | `{ winnerId, winnerName, ... }` | Race round winner |
-| `race-wrong-answer` | `{ playerId, playerName, ... }` | Wrong answer in race |
-| `race-round-no-winner` | `{ questionIndex, correctIndex }` | No winner this round |
-| `game-over` | `{ players }` | Duel game ended |
-| `race-game-over` | `{ players }` | Race game ended |
-| `host-changed` | `{ newHostId }` | Host changed (original left) |
-| `rematch-started` | `{ room }` | Rematch initiated |
-| `error` | `{ message }` | Error occurred |
-
-## License
-
-MIT License - see [LICENSE](LICENSE) for details.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Feel free to:
 
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+<div align="center">
+
+**Built with ❤️ for learners everywhere**
+
+<a href="https://learn.engels.wtf">
+<img src="https://img.shields.io/badge/Try_it_now-learn.engels.wtf-6366f1?style=for-the-badge" alt="Try it now" />
+</a>
+
+</div>
